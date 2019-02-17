@@ -1,0 +1,25 @@
+ul {
+    float: right;
+}
+
+/* body{
+    background: (0,0,0,0) !important;
+} */
+
+.navbar-header a{
+    color: #2F2F2F !important;
+    text-decoration: bold;
+    font-size: 3em !important;
+    padding-top: 0.5em;
+}
+
+ul a{
+    color: #2F2F2F !important;
+    text-decoration: bold;
+    font-size: 2em !important;
+    padding-top: 1em;
+}
+
+li{
+    padding-left: 2em;
+}

@@ -1,4 +1,6 @@
-body {
+@import '@angular/material/prebuilt-themes/purple-green.css'
+
+/* body {
     background-image: url("../../assets/Sparkly2.jpg");
     background-size: cover;
-}
+} */

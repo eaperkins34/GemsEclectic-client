@@ -6,6 +6,7 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { HttpClientModule} from '@angular/common/http';
 import { MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import { LoginComponent } from './login/login.component';
     JewelryListComponent,
     FooterComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { LoginComponent } from './login/login.component';
     CarouselModule,
     MatButtonModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

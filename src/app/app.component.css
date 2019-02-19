@@ -1,0 +1,11 @@
+header {
+    text-align: center;
+}
+
+a {
+    font-family: 'Dancing Script', cursive !important;
+    color: #756E6E !important;
+    font-size:5em;
+    text-align: center;
+    text-decoration: none;
+}

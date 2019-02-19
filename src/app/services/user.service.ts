@@ -17,11 +17,11 @@ const httpOptions = {
 })
 
 export class UserService {
-  private currentUserSubject: BehaviorSubject<User>;
-  private currentUser: Observable<User>;
+  // private currentUserSubject: BehaviorSubject<User>;
+  // private currentUser: Observable<User>;
 
   constructor(private http: HttpClient) {
-    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+    // this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
   }
 
   login(username: string, password: string) {
@@ -31,10 +31,10 @@ export class UserService {
     };
     return this.http.post<any>('http://localhost:3000/user/login', userToServer)
     .pipe(map(user => {
-      if (user.user && user) {
+      if (user && user) {
         localStorage.setItem('currentUser', user.sessionToken);
       }
       return user;
-    }))
+    }));
   }
 }

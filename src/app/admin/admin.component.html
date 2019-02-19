@@ -1,3 +1,9 @@
-<p>
-  admin works!
-</p>
+<div class="deck">
+    <div class="cardContainer">
+      <div class="card" *ngFor="let jewelry of jewelry">
+        <img src={{jewelry.image}} id="inventory">
+        <h4>{{jewelry.description}}</h4>
+        <h4>${{jewelry.price}}.00</h4>
+      </div>
+    </div>
+  </div>

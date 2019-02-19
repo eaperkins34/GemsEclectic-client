@@ -10,13 +10,8 @@ import { Jewelry } from '../models/jewelry-model';
 })
 
 export class HomeComponent implements OnInit {
-  // @Input() jewelry: Jewelry;
 
   jewelry: Jewelry[];
-  // chosenJewelry: Jewelry;
-  // tempJewelryId: number;
-  // createdClick = false;
-  // update = false;
 
   constructor(
     private jewelryServ: JewelryService,

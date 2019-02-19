@@ -8,17 +8,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
 export class LoginComponent implements OnInit {
   users = [];
   error = '';
   username: string;
-  email: string;
   password: string;
 
   constructor(
     private router: Router,
-    private userService: UserService,
+    private userService: UserService
   ) { }
 
   ngOnInit() {

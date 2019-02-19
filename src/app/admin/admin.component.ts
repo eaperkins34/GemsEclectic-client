@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JewelryService } from '../services/jewelry.service';
+import { Jewelry } from '../models/jewelry-model';
 
 @Component({
   selector: 'app-admin',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
+  jewelry: Jewelry[];
 
-  constructor() { }
+  constructor(private jewelryServ: JewelryService) { }
 
   ngOnInit() {
+    this.getJewelry();
   }
 
+  getJewelry(): void {
+    this.jewelryServ.getJewelry()
+      .subscribe(jewelrys => {this.jewelry = jewelrys, console.log(jewelrys);
+      });
+  }
 }

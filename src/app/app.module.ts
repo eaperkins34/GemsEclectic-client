@@ -5,18 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { CarouselModule } from 'ngx-bootstrap';
 import { HttpClientModule} from '@angular/common/http';
 import { MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { JewelryListComponent } from './jewelry-list/jewelry-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    JewelryListComponent
+    JewelryListComponent,
+    FooterComponent,
+    AdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,8 @@ import { JewelryListComponent } from './jewelry-list/jewelry-list.component';
     HttpClientModule,
     CarouselModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

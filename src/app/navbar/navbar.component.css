@@ -1,25 +1,23 @@
-ul {
-    float: right;
-}
-
-/* body{
-    background: (0,0,0,0) !important;
-} */
-
-.navbar-header a{
-    color: #756E6E !important;
-    text-decoration: bold;
-    font-size: 3em !important;
-    padding-top: 0.5em;
-}
-
 ul a{
-    color: #756E6E !important;
-    text-decoration: bold;
-    font-size: 2em !important;
-    padding-top: 1em;
+    color: #756E6E;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    text-align: center !important;
+    margin: 0 auto;
+    position: relative;
 }
 
 li{
-    padding-left: 2em;
+    /* display: inline; */
+    text-align: center !important;
+    margin: 0 auto;
+}
+
+.navbar{
+    text-align: center !important;
 }

@@ -32,6 +32,17 @@ export class JewelryService {
     );
   }
 
+  createJewelry(jewelry: Jewelry): Observable<Jewelry[]> {
+    const url = `${this.dbURL}/create`;
+    console.log(url);
+    return this.http.post<Jewelry[]>(url, jewelry, httpOptions);
+  }
+
+  deleteJewelry(id: number): Observable<Jewelry> {
+    const url = `${this.dbURL}/delete/${id}`;
+    return this.http.delete<Jewelry>(url, httpOptions);
+  }
+
   private log(message: string) {
     this.messageService.add(`JewelryService: ${message}`);
   }

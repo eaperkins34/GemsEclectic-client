@@ -1,9 +1,20 @@
+<nav>
+  <div class="navbar">
+    <ul class="nav navbar-collapse">
+      <li><a href="/createpiece">New Piece</a></li>
+      <li><a href="#">Sold Pieces</a></li>
+      <li><a href="/home" (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="deck">
     <div class="cardContainer">
       <div class="card" *ngFor="let jewelry of jewelry">
         <img src={{jewelry.image}} id="inventory">
         <h4>{{jewelry.description}}</h4>
         <h4>${{jewelry.price}}.00</h4>
+        <button mat-raised-button color="primary" (click)="onDelete(jewelry.id)">Delete</button>
       </div>
     </div>
   </div>

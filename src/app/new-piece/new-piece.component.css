@@ -1,0 +1,21 @@
+ul a{
+    color: #756E6E;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+}
+
+ul{
+    display: inline-block;
+    text-align: center !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar {
+    text-align: center;
+}

@@ -10,15 +10,28 @@ import { Jewelry } from '../models/jewelry-model';
 export class AdminComponent implements OnInit {
   jewelry: Jewelry[];
 
-  constructor(private jewelryServ: JewelryService) { }
+  constructor(private js: JewelryService) { }
 
   ngOnInit() {
     this.getJewelry();
   }
 
   getJewelry(): void {
-    this.jewelryServ.getJewelry()
+    this.js.getJewelry()
       .subscribe(jewelrys => {this.jewelry = jewelrys, console.log(jewelrys);
       });
   }
+
+  onDelete(id: number) {
+    this.js.deleteJewelry(id).subscribe(res => {
+      console.log('Deleted');
+    });
+    location.reload();
+  }
+
+  logout() {
+    localStorage.clear();
+    sessionStorage.clear();
+  }
+
 }

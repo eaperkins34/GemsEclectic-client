@@ -1,0 +1,39 @@
+<nav>
+  <div class="navbar">
+    <ul class="nav navbar-collapse">
+      <li><a href="/createpiece">New Piece</a></li>
+      <li><a href="#">Sold Pieces</a></li>
+      <li><a href="/home" (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form [formGroup]="createJewelry" (ngSubmit)="onSubmit()">
+  <h1>Create New Piece</h1>
+  <label for="name">Piece Name</label>
+  <input
+    type="text"
+    name="name"
+    formControlName="name"
+    required><br><br>
+  <label for="description">Description</label>
+  <input
+    type="text"
+    name="description"
+    formControlName="description"
+    required><br><br>
+  <label for="image">Image URL</label>
+  <input
+    type="text"
+    name="image"
+    formControlName="image"
+    required><br><br>
+  <label for="price">Price</label>
+  <input
+    type="number"
+    name="price"
+    formControlName="price"
+    required><br><br>
+  <button type="submit">Submit</button>
+</form>
+  

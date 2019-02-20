@@ -1,0 +1,14 @@
+<h1>Update Piece</h1>
+
+<mat-card>
+  <div class="container">
+    <mat-card-content>
+      <form [formGroup]="jewerlyEditForm" (ngSubmit)="onSubmit(jewerlyEditForm)">
+        <mat-form-field>
+          <input matInput placeholder="Name" type="text" formControlName="name">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Update Jewelry</button>
+      </form>
+    </mat-card-content>
+  </div>
+</mat-card>

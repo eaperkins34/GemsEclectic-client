@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { NewPieceComponent } from './new-piece/new-piece.component';
+import { UpdateJewerlyComponent } from './update-jewerly/update-jewerly.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { NewPieceComponent } from './new-piece/new-piece.component';
     AdminComponent,
     LoginComponent,
     NewPieceComponent,
+    UpdateJewerlyComponent,
   ],
   imports: [
     BrowserModule,

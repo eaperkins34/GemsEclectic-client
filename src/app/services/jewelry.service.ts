@@ -43,6 +43,11 @@ export class JewelryService {
     return this.http.delete<Jewelry>(url, httpOptions);
   }
 
+  updateJewelry(editFormDetails): Observable<Jewelry> {
+     const url = `${this.dbURL}/update/${editFormDetails.id}`;
+     return this.http.put<Jewelry>(`${url}`, editFormDetails, httpOptions);
+  }
+
   private log(message: string) {
     this.messageService.add(`JewelryService: ${message}`);
   }

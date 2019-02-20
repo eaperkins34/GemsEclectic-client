@@ -9,6 +9,7 @@ import { Jewelry } from '../models/jewelry-model';
 })
 export class AdminComponent implements OnInit {
   jewelry: Jewelry[];
+  // update = false;
 
   constructor(private js: JewelryService) { }
 
@@ -28,6 +29,10 @@ export class AdminComponent implements OnInit {
     });
     location.reload();
   }
+
+  // onUpdate(): void{
+  //   this.update = true;
+  // }
 
   logout() {
     localStorage.clear();
